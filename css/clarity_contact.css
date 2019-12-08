@@ -7,6 +7,15 @@ h1 {
     font-size: 50px;
 }
 
+p {
+    margin: 0px;
+}
+
+h2 {
+    color: #666666;
+    margin: 0px;
+}
+
 /* header */
 .header-container {
     height: 98px;
@@ -85,7 +94,27 @@ h1 {
 }
 
 
-/* map container */
+/* contact container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 3em 0;
+}
+
+.form-container {
+    width: 75%; 
+}
+
+.contact-info-container {
+    width: 25%;
+}
 
 @media only screen and (max-width: 600px) {
     h1 {
