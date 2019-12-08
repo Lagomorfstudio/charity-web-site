@@ -16,6 +16,10 @@ h2 {
     margin: 0px;
 }
 
+label {
+    color: #666666;;
+}
+
 /* header */
 .header-container {
     height: 98px;
@@ -108,14 +112,75 @@ h2 {
     padding: 3em 0;
 }
 
-.form-container {
-    width: 75%; 
-}
-
 .contact-info-container {
-    width: 25%;
+    width: 20%;
+    padding-left: 32px;
 }
 
+/* form */
+.form-container {
+    width: 80%; 
+    padding-right: 32px;
+}
+
+.form-elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.form-elements > div{
+    width: 30%;
+}
+
+.message-form > textarea,  .form-elements > div > input{
+    width: 100%;
+    padding: 7px;
+    margin-top: 7px;
+    background-color: #F9F9F9;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.button-form {
+    background: #cc4d4d;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-bottom: 4px solid #a72525;
+    padding: 10px 32px;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer-container {
+    width: 100%;
+    background: #222222;
+    padding: 3em 0;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid #cc4d4d;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.column-footer {
+    color: white;
+    width: 23%;
+}
+
+.hr-footer {
+    border: 3px solid #cc4d4d;
+    margin-bottom: 32px;
+}
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 35px;
