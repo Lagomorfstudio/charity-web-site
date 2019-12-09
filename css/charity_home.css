@@ -1,0 +1,232 @@
+.home-container {
+    width: 100% ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    margin: 0px;
+}
+
+h2 {
+    color: #666666;
+    margin: 0px;
+}
+
+/* hr title */
+.hr-container {
+    display: flex;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.red-hr {
+    height: 7px;
+    width: 150px;
+    background: #cc4d4d;
+}
+
+.red-hr-opacity {
+    height: 7px;
+    width: 90%;
+    background: #cc4d4d69;
+    border-left: 2px solid white;
+}
+
+/* header */
+.header-container {
+    height: 98px;
+    width: 100%;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    background-color: #222222;
+    border-top: 8px solid #773838;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+.header {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+/* menu */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container > p {
+    font-size: 32px;
+}
+
+.menu-item {
+    width: 90px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    border-top: 8px solid #773838;
+}
+
+.menu-item:last-child {
+    background-color: #32ba6d;
+    border-top: 8px solid #32ba6d;
+    flex-direction: column
+}
+
+.icon {
+    font-size: 40px !important;
+    color: #cc4d4d
+}
+
+.menu-item:hover {
+    border-top: 8px solid #cc4d4d;
+    color: #cc4d4d;
+    cursor: pointer;
+}
+
+
+/* banner */
+.banner-container {
+    width: 100%;
+    height: 545px;
+    background: #cc4d4d;
+    background-image: url('https://miro.medium.com/max/1920/1*NoNn1MfmacJ2sRnj17BBlw.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 6em;
+    box-sizing: border-box;
+}
+
+.banner-container > div > h1, .banner-container > div > p{
+    padding: 10px 20px;
+    color: white;
+    background: rgba(0,0,0, 0.5);
+}
+
+/* causes container */
+.causes-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4em 0;
+    background: #f0eff4;
+}
+
+.causes {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-cause-container {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url('https://www.ledgerinsights.com/wp-content/uploads/2019/09/charity-810x476.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+.cause {
+    width: 25%;
+    text-align: center;
+    padding: 32px 0;
+    position: relative;
+}
+
+.icon-cause {
+    position: absolute;
+    top: 109%;
+    left: 45%;
+}
+
+
+/* gallery container */
+.gallery-container {
+    padding: 4em 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery {
+    width: 80%;
+}
+
+/* lastest container */
+.lastest-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4em 0;
+}
+
+.lastest {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.events {
+    width: 70%;
+    padding-right: 32px;
+}
+
+.news {
+    width: 30%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 35px;
+    }
+    .menu-container {
+        display: none;
+    }
+    .page-info {
+        height: 130px;
+    }
+
+    /* banner */
+    .banner-container {
+        height: 480px;
+        padding: 0 1em;
+    }
+
+    /* causes */
+    .causes-container {
+        flex-direction: column;
+    }
+    .cause {
+        width: 80%;
+    }
+
+    .icon-cause {
+        position: initial;
+    }
+
+    /* gallery container */
+
+    .gallery {
+        width: 90%;
+    }
+
+  }
