@@ -191,4 +191,43 @@ label {
     .page-info {
         height: 130px;
     }
+
+    /* form */
+    .form-container {
+        width: 95%; 
+    }
+
+    .form-elements {
+        flex-direction: column;
+    }
+
+    .form-elements > div{
+        width: 100%;
+        margin-bottom: 16px;;
+    }
+    
+    .contact-info-container {
+        width: 90%;
+        padding-left: 0px;
+    }
+
+    /* contact */
+    .contact {
+        flex-direction: column;
+        width: 90%;
+        padding: 3em 0;
+    }
+
+    
+    /* footer */
+    .footer {
+        flex-direction: column;;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .column-footer {
+        color: white;
+        width: 100%;
+    }
   }
